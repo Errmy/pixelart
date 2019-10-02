@@ -8,6 +8,8 @@ if arguments == 0:
     print("No arguments entered.")
 else:
     imagefile = sys.argv[1]
+    if arguments == 2:
+        pixelarea = int(sys.argv[2])
     splitedimgf = imagefile.rsplit(".",1)
     if splitedimgf[1] != "jpg":
         print("File is not a jpg.")
